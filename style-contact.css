@@ -1,0 +1,133 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.menu{
+    text-align: center;
+    background-color: black;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2% 3%;
+    position: relative;
+    border-bottom: orangered;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+    font-family: 'Poppins', sans-serif;
+}
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+
+.text-intro{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    right: 13%;
+    text-align: center;
+}
+.text-intro p{
+    padding: 2% 0%;
+}
+.button-link{
+    padding: 1%;
+    border: 1px solid;
+    border-color: white;
+    text-decoration: none;
+    color: white;
+}
+.button-link:hover{
+    background: #f44336;
+    transition: 1s;
+    color: white;
+}
+@media only screen and (max-width: 571px)
+{
+    .menu ul{
+        padding: 0% 20%;
+    }
+}
+
+/*content*/
+.location{
+    padding: 5% 0%;
+    margin: auto;
+    width: 80%;
+}
+.location iframe{
+    width: 100%;
+}
+
+/*content - lien he*/
+.content{
+    text-align: center;
+    padding: 2% 3%;
+    
+}
+.content .col1>div{
+    text-align: left;
+    padding: 2% 15%;
+}
+svg{
+    color: #f44336;
+}
+
+.col2 form{
+    padding: 0%;
+}
+.col2 input, .col2 textarea{
+    width: 70%;
+    padding: 2%;
+    margin: 2%;
+    border: 1px solid #ccc;
+}
+.button-link{
+    padding: 1%;
+    width: 20%;
+    border: 1px solid;
+    border-color: white;
+    text-decoration: none;
+    color: black;
+}
+.button-link:hover{
+    background: #f44336;
+    transition: 1s;
+    color: white;
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+    padding: 4% 3%;
+    background-color: #edededad;
+}
+
